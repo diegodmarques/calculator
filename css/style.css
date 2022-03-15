@@ -5,15 +5,14 @@
 body{
     margin:0;
     padding: 0;
-   
     background-color: cadetblue;
 }
 
 
 h2{
     font-weight: 200;
-    
 }
+
 .flex{
     display: flex;
     flex-direction: column;
@@ -37,19 +36,21 @@ h2{
     width: 15%;
     /* margin: 0 auto; */
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     /* grid-template-rows: auto auto auto auto auto; */
     grid-gap:4px;
 }
 
 .display{
-    padding: 8px;
+    padding:12px;
     border-radius: 2px;
     color: black;
     background-color: white;
     text-align: right;
     grid-column-start: 1;
     grid-column-end: 4;
+    font-weight: 600;
+
 }
 
 .clear {
