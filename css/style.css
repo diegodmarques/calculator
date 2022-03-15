@@ -30,7 +30,33 @@ h2{
     color: cadetblue;
     background-color: white;
     text-align: center;
+    /* transition: 300ms; */
+    
 }   
+
+/* .btn:active{
+    animation: fade-out 300ms ;
+
+} */
+
+/* @keyframes fade-out{
+
+    from{
+     
+  
+    }
+    to{
+ 
+    }
+
+   
+} */
+
+/* .btn:active{
+    background-color: aqua;
+    border-radius: 100%;
+    transition: 1s;
+} */
 
 .container_calculadora{
     width: 15%;

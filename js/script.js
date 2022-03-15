@@ -7,6 +7,8 @@ $( "#flexSwitchCheckChecked" ).on( "click", function( event ) {
     $('.display').css('color', 'white')
   });
 
+
+
 //  globais
   var display = document.getElementsByClassName('display')[0]
   var valor1 = null
@@ -15,7 +17,14 @@ $( "#flexSwitchCheckChecked" ).on( "click", function( event ) {
   var duff = true
   var pressSignal = false
   
-  
+  // var arrayBtn = document.getElementsByClassName('btn')
+
+  // for(i = 0; i < arrayBtn.length; i++){
+  //   arrayBtn[i].addEventListener('click', fadeInOut(){
+      
+
+  //   })
+  // }
 
 
    
