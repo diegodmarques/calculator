@@ -1,0 +1,25 @@
+[2022-03-15 00:44:13.103] [exthost] [info] Extension host with pid 10626 started
+[2022-03-15 00:44:13.289] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-15 00:44:13.298] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-15 00:44:13.303] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-15 00:44:13.322] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: true, activationEvent: '*'
+[2022-03-15 00:44:23.273] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:23.296] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:23.301] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:25.455] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-15 00:44:25.476] [exthost] [info] Extension host with pid 10626 exiting with code 0
+[2022-03-15 00:44:27.933] [exthost] [info] Extension host with pid 10726 started
+[2022-03-15 00:44:27.933] [exthost] [info] Skipping acquiring lock for /home/felipe/Documentos/Projetos/calculator-diego/~/.vscode-root/User/workspaceStorage/24f6a5a50a08f207e61058fa48896dae.
+[2022-03-15 00:44:28.106] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-15 00:44:28.111] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-15 00:44:28.114] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-03-15 00:44:28.135] [exthost] [info] ExtensionService#_doActivateExtension vscode-icons-team.vscode-icons, startup: true, activationEvent: '*'
+[2022-03-15 00:44:28.489] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+[2022-03-15 00:44:32.765] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-15 00:44:32.786] [exthost] [info] Eager extensions activated
+[2022-03-15 00:44:32.789] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:32.803] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:32.807] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode-remote.remote-containers, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-15 00:44:59.949] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+[2022-03-15 01:22:19.646] [exthost] [info] extension host terminating: renderer closed the socket
+[2022-03-15 01:22:19.671] [exthost] [info] Extension host with pid 10726 exiting with code 0

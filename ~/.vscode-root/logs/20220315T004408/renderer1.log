@@ -1,0 +1,5 @@
+[2022-03-15 00:44:12.903] [renderer1] [error] ["Error: Unknown or unsupported transport “disabled” for address “disabled:”"]
+[2022-03-15 00:44:12.904] [renderer1] [warning] Settings Sync: Accounts are not initialized
+[2022-03-15 00:44:27.372] [renderer1] [error] ["Error: Unknown or unsupported transport “disabled” for address “disabled:”"]
+[2022-03-15 00:44:27.372] [renderer1] [warning] Settings Sync: Accounts are not initialized
+[2022-03-15 00:44:27.838] [renderer1] [warning] No search provider registered for scheme: file, waiting
