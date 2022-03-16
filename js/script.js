@@ -1,11 +1,12 @@
-$( "#flexSwitchCheckChecked" ).on( "click", function( event ) {
-    $('.btn').css('background-color', '#363636')
-    $('.btn').css('color', 'white')
-    $('body').css('background-color', 'black')
-    $('.clear').css('background-color', 'red')
-    $('.display').css('background-color', '#363636')
-    $('.display').css('color', 'white')
-  });
+$( ".form-check-input" ).click(function(event) {
+   
+    $('.display').toggleClass('display-dark')
+    $('.btn').toggleClass('btn-dark')
+    $('.clear').toggleClass('clear-dark')
+    $('body').toggleClass('body-dark')
+    $(event.target).toggleClass('switch-dark')
+
+})
 
 
 
@@ -19,19 +20,32 @@ $( "#flexSwitchCheckChecked" ).on( "click", function( event ) {
   var pressEqual = false
   var duff = true
 
+  // btn-fade on click
   
-  // var arrayBtn = document.getElementsByClassName('btn')
+  var arrayBtn = document.getElementsByClassName('btn')
 
-  // for(i = 0; i < arrayBtn.length; i++){
-  //   arrayBtn[i].addEventListener('click', fadeInOut(){
+  for(i = 0; i < arrayBtn.length; i++){
+    arrayBtn[i].addEventListener('click', function fadeInOut(e){
+
+      if(e.target.classList.contains('btn-fade-in')){
+
+        $(e.target).removeClass("btn-fade-in")
+        $(e.target).addClass("btn-fade-out")
+
+        
+      } else {
+        
+        $(e.target).addClass("btn-fade-in")
+        $(e.target).removeClass("btn-fade-out")
+        
+      }
       
+    })
+    
+  }
 
-  //   })
-  // }
+    function addDisplay(event){
 
-
-   
-   function addDisplay(event){
       let digito = event.target.textContent
       if(event.target.textContent == '.'){
           display.textContent.includes('.') ? digito = '' : digito = '.'

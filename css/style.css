@@ -1,13 +1,29 @@
 *{
     font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
     margin:0;
     padding: 0;
-    background-color: cadetblue;
+    transition: 1s;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+        animation: gradient 20s ease-in-out infinite;
+        height: 100vh; 
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 h2{
     font-weight: 200;
@@ -17,54 +33,29 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     height: 100vh;
     color: white;
-    
 }
 
 .btn{
     font-weight: 600;
-    padding: 12px;
+    padding: 14px;
     border-radius: 2px;
     color: cadetblue;
+    mix-blend-mode:luminosity;
     background-color: white;
     text-align: center;
-    /* transition: 300ms; */
-    
+    border: none;
+    transition: 1s;
 }   
 
-/* .btn:active{
-    animation: fade-out 300ms ;
-
-} */
-
-/* @keyframes fade-out{
-
-    from{
-     
-  
-    }
-    to{
- 
-    }
-
-   
-} */
-
-/* .btn:active{
-    background-color: aqua;
-    border-radius: 100%;
-    transition: 1s;
-} */
-
 .container_calculadora{
-    width: 15%;
-    /* margin: 0 auto; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: auto auto auto auto auto; */
-    grid-gap:4px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 4px;
+    transition: 1s; 
 }
 
 .display{
@@ -76,11 +67,106 @@ h2{
     grid-column-start: 1;
     grid-column-end: 4;
     font-weight: 600;
-
+    transition: 1s; 
+    mix-blend-mode:luminosity;
 }
 
-.clear {
-    background-color: red;
+.clear, .clear:hover{
+    color: white;
+    background-color: rgb(97, 1, 1);
+    mix-blend-mode: lighten;
+    /* border: 0.5px solid rgb(255, 255, 255); */
+    box-shadow: inset 0 0 2px 1px white;
+    box-sizing: border-box;
+}
+
+.form-check-input{
+    padding: 10px;
+    background-image: url(../images/sol.gif) !important;
+    box-shadow: 0 0 40px 0.15rem rgba(255, 238, 1, 0.693);
+    border: 1px rgb(255, 255, 255) !important;
+    mix-blend-mode: luminosity;
+}
+
+.form-check-input:focus{
+    box-shadow: 0 0 40px 0.15rem rgba(255, 238, 0, 0.446);
+}
+
+/* btn fade */
+.btn-fade-in{
+    animation: fade-in 600ms ease-out;
+}
+
+.btn-fade-out{
+    animation: fade-out 600ms ease-out;
+}
+
+@keyframes fade-in{
+    from{
+        background-color: #868686 ;
+        /* transform: rotate(-360deg);   */
+    }
+}
+
+@keyframes fade-out{
+    from{
+        background-color: #868686;
+        
+    }
+}
+
+/* Theme Dark */
+
+.display-dark{
+    padding:12px;
+    border-radius: 2px;
+    color: white;
+    background-color: #363636;
+    text-align: right;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+.btn-dark{
+    font-weight: 600;
+    padding: 14px;
+    border-radius: 2px;
+    color: white;
+    background-color: #363636;
+    text-align: center;
+    outline: none;
+    border: none;
+    mix-blend-mode: none;
+    transition: 500ms;
+}   
+
+.clear-dark {
+    background-color: #ff0000;
     color:white;
+    box-shadow: none;
+}
+
+.clear-dark:hover{
+    background-color: #e80303;
+    box-shadow: none;
+}
+
+.body-dark{
+    background-color: rgb(12, 12, 12);
+    background-image: linear-gradient(-45deg, #000000, #050505);
+    transition: 500ms;
+}
+
+.switch-dark{
+    padding: 10px;
+    background-color: #363636 !important; 
+    background-image: url(../images/icons8-lua-cheia-48.png) !important;
+    box-shadow: 0 0 40px 0.15rem rgba(251, 253, 255, 0.2);
+}
+
+.switch-dark:focus{
+    box-shadow: 0 0 40px 0.15rem rgba(251, 253, 255, 0.2);
 }
 
