@@ -15,9 +15,10 @@ $( ".form-check-input" ).click(function(event) {
   var valor1 = null
   var valor2 = null
   var operator = null
+  var operatorMemory = null
+  var pressSignal = false;
+  var pressEqual = false
   var duff = true
-  var pressSignal = false
-
 
   // btn-fade on click
   
@@ -43,20 +44,20 @@ $( ".form-check-input" ).click(function(event) {
     
   }
 
-  // 
-  
-  
-
-
     function addDisplay(event){
+
       let digito = event.target.textContent
+      if(event.target.textContent == '.'){
+          display.textContent.includes('.') ? digito = '' : digito = '.'
+      }
       if(valor1 != null && duff){
         display.textContent = ''
         duff = false
       }
       display.textContent += digito
       pressSignal = false
-    }
+      pressEqual = false
+   }
     
    var arrayNummbers = document.getElementsByClassName('numbers')
 
@@ -73,19 +74,18 @@ $( ".form-check-input" ).click(function(event) {
     valor2 = null;
     operator = null;
     duff = true
+    pressSignal = false;
+    pressEqual = false
    }
    
   function calculate(e){
-      valor2 =  +display.textContent 
-      let aux = valor2
+      valor2 = pressEqual ? valor2 : +display.textContent
       display.textContent = operator() 
       valor1 = +display.textContent
-      valor2 = null
-      duff = true  //1
+      duff = true  
+      
       if(e != null){
-         operator = null;
-         valor2 = aux
-       
+         pressEqual = true
       }
       
   }
@@ -124,6 +124,7 @@ $( ".form-check-input" ).click(function(event) {
           break;
         } 
         pressSignal = true
+        pressEqual = false
       }
   var equal = document.getElementsByClassName('equal')[0]
   equal.addEventListener('click', calculate)
